@@ -227,10 +227,13 @@
          rather than the uevent framework. -->
     <bool name="config_useDevInputEventForAudioJack">false</bool>
 
-    <!-- Indicate whether closing the lid causes the device to go to sleep and opening
-         it causes the device to wake up.
-         The default is false. -->
-    <bool name="config_lidControlsSleep">true</bool>
+    <!-- Smart Cover coords -->
+    <integer-array name="config_smartCoverWindowCoords">
+        <item>55</item>     <!-- Top -->
+        <item>200</item>    <!-- Left -->
+        <item>850</item>    <!-- Bottom -->
+        <item>880</item>    <!-- Right -->
+    </integer-array>
 
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
