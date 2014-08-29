@@ -124,4 +124,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/lge/g2-common/releasetools
 COMMON_GLOBAL_CFLAGS += -DBOARD_CHARGING_CMDLINE_NAME='"androidboot.mode"' -DBOARD_CHARGING_CMDLINE_VALUE='"chargerlogo"'
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 
+#Specific hardware options
 BOARD_HARDWARE_CLASS := device/lge/g2-common/cmhw/
+
+#Fix long recovery flash times
+BOARD_SUPPRESS_SECURE_ERASE := true
